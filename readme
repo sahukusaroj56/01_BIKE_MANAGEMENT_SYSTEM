@@ -1,0 +1,42 @@
+Bike Management System using Spring Boot and a database (like MySQL), following industry standards.
+I'll guide you step-by-step with code and clear explanations of Core Java and Spring concepts at each step.
+Bike Management System Features
+Add new bikes
+
+Get all bikes
+
+Get bike by ID
+
+Update bike
+
+Delete bike
+
+Project Structure
+bike-management/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com.bike.info/
+│   │   │       ├── controller/
+│   │   │       ├── entity/
+│   │   │       ├── repository/
+│   │   │       ├── service/
+│   │   │       └── BikeManagementApplication.java
+│   │   └── resources/
+│   │       ├── application.properties
+
+Explanation:
+Bike.java
+@Entity – makes this class a DB table.
+@Id – primary key.
+@GeneratedValue – auto-increment ID.
+Lombok: @Data, @NoArgsConstructor, @AllArgsConstructor = boilerplate removed.
+
+BikeRepository.java
+Explanation:
+Inherits CRUD methods from JpaRepository.
+No need to write boilerplate SQL.
+
+
+
+
